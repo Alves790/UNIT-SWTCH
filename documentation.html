@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - UNIT SWITCH : Convertisseur d'unités SI</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            background-color: #4a6fa5;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        
+        h2 {
+            color: #4a6fa5;
+            border-bottom: 2px solid #4a6fa5;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        
+        h3 {
+            color: #2c4a76;
+        }
+        
+        .section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        code {
+            background-color: #f0f0f0;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: Consolas, monospace;
+        }
+        
+        .feature-list {
+            padding-left: 20px;
+        }
+        
+        .feature-list li {
+            margin-bottom: 10px;
+        }
+        
+        .screenshot {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .screenshot img {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Documentation de UNIT SWITCH : Convertisseur d'unités SI</h1>
+        <p>Version 1.0 - Guide complet d'utilisation</p>
+    </header>
+
+    <div class="section">
+        <h2>Introduction</h2>
+        <p>Bienvenue dans la documentation de <strong>UNIT SWITCH</strong>, une application complète permettant de convertir entre différentes unités de mesure SI et d'effectuer des calculs simples avec unités.</p>
+    </div>
+
+    <div class="section">
+        <h2>Fonctionnalités principales</h2>
+        <ul class="feature-list">
+            <li><strong>Conversion d'unités</strong> : Convertir entre différentes unités de longueur, masse, temps, volume, etc.</li>
+            <li><strong>Calculatrice avancée</strong> : Effectuer des calculs avec des unités différentes (ex: 2 km + 500 m)</li>
+            <li><strong>Gestion de l'historique</strong> : Consulter et exporter vos conversions précédentes</li>
+            <li><strong>Interface personnalisable</strong> : Changer entre les modes clair et sombre</li>
+            <li><strong>Notation scientifique</strong> : Affichage automatique des très grands/petits nombres</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Guide d'utilisation</h2>
+        
+        <h3>1. Conversion simple</h3>
+
+        <div class="screenshot">
+            <img src="Screenshots/conversion.png" alt="Capture d'écran de l'application">
+            <p><em>Interface Page Conversion</em></p>
+        </div>
+        
+        <ol>
+            <li>Sélectionnez le type de grandeur (longueur, masse, etc.) dans le menu déroulant</li>
+            <li>Entrez la valeur à convertir dans le champ "Valeur"</li>
+            <li>Sélectionnez l'unité source (de) et l'unité cible (à)</li>
+            <li>Cliquez sur le bouton "Convertir"</li>
+            <li>Le résultat s'affichera en dessous du bouton</li>
+        </ol>
+        
+        <h3>2. Calculatrice avancée</h3>
+        <div class="screenshot">
+            <img src="Screenshots/calculatrice.png" alt="Capture d'écran de l'application">
+            <p><em>Interface Page Calculatrice</em></p>
+        </div>
+        <ol>
+            <li>Allez dans l'onglet "Calculatrice"</li>
+            <li>Entrez votre expression (ex: "2 km + 300 m")</li>
+            <li>Cliquez sur "Calculer"</li>
+            <li>Pour convertir le résultat, sélectionnez une unité et cliquez sur "Convertir le résultat en"</li>
+        </ol>
+        
+        <h3>3. Gestion de l'historique</h3>
+        <div class="screenshot">
+            <img src="Screenshots/historique.png" alt="Capture d'écran de l'application">
+            <p><em>Interface Page Historique</em></p>
+        </div>
+        <ol>
+            <li>Allez dans l'onglet "Historique"</li>
+            <li>Pour effacer l'historique, cliquez sur "Effacer l'historique"</li>
+            <li>Pour exporter, cliquez sur "Exporter en CSV"</li>
+            <li>Le fichier sera sous "historique.csv" et sauvegardé dans le dossier "data"</li>
+        </ol>
+        <h4>4. Gestion de l'aide</h3>
+        <div class="screenshot">
+            <img src="Screenshots/Aide.png" alt="Capture d'écran de l'application">
+            <p><em>Interface Page Aide</em></p>
+        </div>
+        <ol>
+            <li>Allez dans l'onglet "Aide"</li>
+            <li>Pour accéder à la documentation, cliquer sur "Documentation"</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>Types de grandeurs supportées</h2>
+        <table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse: collapse;">
+            <tr>
+                <th>Grandeur</th>
+                <th>Unités disponibles</th>
+                <th>Exemple</th>
+            </tr>
+            <tr>
+                <td>Longueur 📏</td>
+                <td>m, km, cm, mm, mile, pied, pouce</td>
+                <td>1 km → 0.621371 mile</td>
+            </tr>
+            <tr>
+                <td>Masse ⚖️</td>
+                <td>kg, g, mg, livre, once</td>
+                <td>1 kg → 2.20462 livres</td>
+            </tr>
+            <tr>
+                <td>Temps ⏱</td>
+                <td>s, min, h, jour, an</td>
+                <td>1 h → 60 min</td>
+            </tr>
+            <tr>
+                <td>Intensité Electrique ⚡</td>
+                <td>A, mA, kA, µA</td>
+                <td>250 mA → 0.25 A</td>
+            </tr>
+            <tr>
+                <td>Température 🌡️</td>
+                <td>°C, °F, K</td>
+                <td>25°C → 77°F</td>
+            </tr>
+            <tr>
+                <td>Intensité Lumineuse ☀️</td>
+                <td>cd, mcd, kcd</td>
+                <td>8 cd → 8000 mcd</td>
+            </tr>
+            <tr><td>Quantité de matière 🧪</td>
+                <td>m, mmol, kmol</td>
+                <td>4.543 mol → 4543 mmol</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>FAQ</h2>
+        
+        <h3>Comment signaler un bug ?</h3>
+        <p>Cliquez sur le bouton "Signaler un bug" dans l'onglet Aide pour nous contacter via WhatsApp.</p>
+        
+        <h3>Où sont sauvegardés les fichiers d'export ?</h3>
+        <p>Dans le dossier "data" à côté de l'application.</p>
+        
+        <h3>Comment changer le thème de l'application ?</h3>
+        <p>Utilisez le switch "Mode Sombre" dans l'onglet Conversion.</p>
+    </div>
+
+    <footer>
+        <p>© 2025 UNIT SWITCH : Convertisseur d'unités SI - Tous droits réservés</p>
+        <p>Version 1.0 - Dernière mise à jour : 5/06/2025</p>
+    </footer>
+</body>
+</html>
